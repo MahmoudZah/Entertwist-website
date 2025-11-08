@@ -1,13 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Entertwist Entertainment</title>
-</head>
-<body>
-    <h1>Contact Page - Coming Soon</h1>
-    <p><a href="index.html">Back to Home</a></p>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Entertwist Entertainment</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="header fixed-top">
+      <nav class="navbar">
+        <div class="container d-flex align-items-center">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvas"
+            aria-controls="navbarOffcanvas"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/imgs/logo.jpg"
+              alt="Entertwist Entertainment Logo"
+            />
+          </a>
+          <div class="contact-phone">
+            <a href="tel:617-908-8839">Contact Us : 617-908-8839</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Offcanvas Sidebar -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="navbarOffcanvas"
+        aria-labelledby="offcanvasLabel"
+      >
+        <div class="offcanvas-header border-0">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item border-0">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item border-0">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item border-0">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item border-0">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item border-0">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item border-0">
+              <a class="nav-link" href="tutorials.html">Tutorials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-page-section">
+      <div class="container">
+        <h1 class="contact-page-title">Contact Us</h1>
+
+        <div class="row g-5">
+          <!-- Left Column - Contact Form -->
+          <div class="col-lg-6">
+            <div class="contact-form-container">
+              <h2 class="form-section-title">Send us an email!</h2>
+              <form class="contact-form" id="contactForm">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email*"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="6"
+                    placeholder="Message*"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-send">Send</button>
+                <p class="recaptcha-notice">
+                  This site is protected by reCAPTCHA and the Google
+                  <a href="https://policies.google.com/privacy" target="_blank"
+                    >Privacy Policy</a
+                  >
+                  and
+                  <a href="https://policies.google.com/terms" target="_blank"
+                    >Terms of Service</a
+                  >
+                  apply.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Column - Contact Info -->
+          <div class="col-lg-6">
+            <div class="contact-info-container">
+              <h3 class="info-section-title">
+                Better yet, view our portfolio -
+                Twisting Gallery
+              </h3>
+              <p class="info-text">
+                We love our customers, so feel free to contact us!
+              </p>
+              <h4 class="company-name">Entertwist</h4>
+              <p class="contact-phone-info">
+                Contact Us :
+                <a href="tel:617-908-8839" class="phone-link">617-908-8839</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container text-center">
+        <div class="d-flex justify-content-between">
+          <p class="mb-0 fs-5">Copyright: Entertwist - All Rights Reserved.</p>
+          <p class="mb-3 fs-5">
+            Powered by <strong>Elfant Productions</strong>
+          </p>
+        </div>
+        <div class="footer-nav">
+          <a class="fs-5" href="index.html">Home</a>
+          <a class="fs-5" href="about.html">About</a>
+          <a class="fs-5" href="gallery.html">Gallery</a>
+          <a class="fs-5" href="services.html">Our Services</a>
+          <a class="fs-5" href="tutorials.html">Tutorials</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>

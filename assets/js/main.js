@@ -57,16 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Prevent default for placeholder links
-  const placeholderLinks = document.querySelectorAll(
-    'a[href="about.html"], a[href="gallery.html"], a[href="services.html"], a[href="contact.html"], a[href="tutorials.html"]'
-  );
-  placeholderLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      alert("This page is coming soon!");
-    });
-  });
+  // All pages are now available - no more placeholder links needed
 });
 
 // Add slide down animation for cookie banner
