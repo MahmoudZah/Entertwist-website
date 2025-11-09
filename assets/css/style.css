@@ -94,7 +94,7 @@ img {
 .contact-phone a {
   color: #000;
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   text-decoration: none;
   transition: var(--transition);
 }
@@ -190,7 +190,7 @@ img {
 
 .hero-title {
   font-family: "Yellowtail", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #000;
   font-weight: 400;
   line-height: 1.4;
@@ -808,7 +808,6 @@ html {
 
 /* Reviews Section */
 .reviews-section {
-
   min-height: 600px;
   position: relative;
   padding: 4rem 0 !important;
@@ -819,16 +818,16 @@ html {
   padding: 3rem 0;
   min-height: 600px;
   position: relative;
-  padding: 4rem ;
+  padding: 4rem;
 }
-.reviews-container { 
+.reviews-container {
   background-image: url("../imgs/about review bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 600px;
   position: relative;
-  padding: 4rem; 
+  padding: 4rem;
 }
 .review-card {
   background: #fff;
@@ -1508,6 +1507,31 @@ html {
 .btn-send:hover {
   background: #000;
   color: #fff;
+}
+
+.btn-send:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-message {
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.form-message.error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
 }
 
 .recaptcha-notice {

@@ -109,6 +109,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="from_name"
                     placeholder="Name"
                     required
                   />
@@ -117,6 +118,7 @@
                   <input
                     type="email"
                     class="form-control"
+                    name="from_email"
                     placeholder="Email*"
                     required
                   />
@@ -125,11 +127,17 @@
                   <textarea
                     class="form-control"
                     rows="6"
+                    name="message"
                     placeholder="Message*"
                     required
                   ></textarea>
                 </div>
                 <button type="submit" class="btn-send">Send</button>
+                <div
+                  id="formMessage"
+                  class="form-message mt-3"
+                  style="display: none"
+                ></div>
                 <p class="recaptcha-notice">
                   This site is protected by reCAPTCHA and the Google
                   <a href="https://policies.google.com/privacy" target="_blank"
@@ -149,8 +157,7 @@
           <div class="col-lg-6">
             <div class="contact-info-container">
               <h3 class="info-section-title">
-                Better yet, view our portfolio -
-                Twisting Gallery
+                Better yet, view our portfolio - Twisting Gallery
               </h3>
               <p class="info-text">
                 We love our customers, so feel free to contact us!
@@ -159,6 +166,10 @@
               <p class="contact-phone-info">
                 Contact Us :
                 <a href="tel:617-908-8839" class="phone-link">617-908-8839</a>
+                |
+                <a href="mailto:selfant@gmail.com" class="email-link"
+                  >selfant@gmail.com</a
+                >
               </p>
             </div>
           </div>
@@ -187,6 +198,12 @@
 
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
