@@ -6,11 +6,8 @@ Fully responsive website for Entertwist Entertainment - Balloon Twisting Service
 
 - Fully responsive design (desktop, tablet, mobile)
 - Fixed navigation with hamburger menu
-- Hero section with animated gradient background
 - Photo gallery with Swiper.js slider
 - **EmailJS Contact Form** - Sends emails without backend
-- WhatsApp integration
-- Cookie consent banner
 - Smooth animations and transitions
 
 ## 📁 Project Structure
